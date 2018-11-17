@@ -1,0 +1,4 @@
+<h1>タスク詳細</h1>
+<h2><%= @task.title %></h2>
+<p><%= @task.detail %></p>
+<p><a href="/destroy/<%= @task.id %>">完了</a> | <a href="/edit/<%=@task.id%>">編集</a> | <a href='/'>戻る</a></p>

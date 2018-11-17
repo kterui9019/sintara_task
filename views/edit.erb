@@ -1,0 +1,12 @@
+<h1>編集ページ</h1>
+
+<form action="/show/<%= @task.id %>" method='post'>
+  <label for="title">タイトル</label><br>
+  <input type="text" name="title" value="<%= @task.title %>">
+  <p></p>
+  <label for="detail">詳細</label><br>
+  <textarea name="detail"><%= @task.detail %></textarea>
+  <p></p>
+  <input type="submit" value="更新">
+</form>
+<p><a href='/'>戻る</a></p>
